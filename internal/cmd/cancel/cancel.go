@@ -18,7 +18,8 @@ func (c *CancelFlags) AddFlags(cmd *cobra.Command) {
 
 func NewCmdCancel() *cobra.Command {
 	cmd := &cobra.Command{
-		Use: "cancel --force --file [FILENAME]",
+		Use:   "cancel --force --file [FILENAME]",
+		Short: "Cancel transaction",
 	}
 
 	flags.AddFlags(cmd)

@@ -1,4 +1,4 @@
-package create
+package confirm
 
 import "github.com/spf13/cobra"
 
