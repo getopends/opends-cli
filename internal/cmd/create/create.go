@@ -11,9 +11,9 @@ type CreateFlags struct {
 }
 
 func (c *CreateFlags) AddFlags(cmd *cobra.Command) {
-	cmd.Flags().BoolVarP(&c.Force, "force", "F", false, "force")
-	cmd.Flags().StringVarP(&c.File, "filename", "f", "", "file")
-	cmd.Flags().StringVarP(&c.Output, "output", "o", "", "file")
+	cmd.PersistentFlags().BoolVarP(&c.Force, "force", "F", false, "force")
+	cmd.PersistentFlags().StringVarP(&c.File, "filename", "f", "", "file")
+	cmd.PersistentFlags().StringVarP(&c.Output, "output", "o", "", "file")
 }
 
 func NewCmdCreate() *cobra.Command {
