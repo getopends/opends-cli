@@ -1,0 +1,3 @@
+package create
+
+func NewCmdDeleteService() {}

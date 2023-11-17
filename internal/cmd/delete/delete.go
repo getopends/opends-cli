@@ -1,0 +1,3 @@
+package delete
+
+func NewCmdDelete() {}
